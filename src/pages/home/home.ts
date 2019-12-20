@@ -22,4 +22,22 @@ export class HomePage {
     console.log('ionViewDidLoad HomePage');
   }
 
+  slider =[
+    {
+      img:'../../assets/imgs/card1.png',
+      title:'Mauris Pharetra nisl eget',
+      content:'Lorem ipoum dolor site amet, consectetur adipiscing elit. Cras nec nunc urna Nunc vel consequat augue Donec gravida luctus justo, eu sagittis ipsum elementum aliquet.'
+    },
+    {
+      img:'../../assets/imgs/card2.png',
+      title:'Aliqqam eart volutpat',
+      content:'Lorem ipoum dolor site amet, consectetur adipiscing elit. Cras nec nunc urna Nunc vel consequat augue Donec gravida luctus justo, eu sagittis ipsum elementum aliquet.'
+    },
+    {
+      img:'../../assets/imgs/card3.png',
+      title:' Aresh bimarst delivery',
+      content:'Lorem ipoum dolor site amet, consectetur adipiscing elit. Cras nec nunc urna Nunc vel consequat augue Donec gravida luctus justo, eu sagittis ipsum elementum aliquet.'
+    }
+  ]
+
 }
