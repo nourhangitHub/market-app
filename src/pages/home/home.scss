@@ -1,3 +1,47 @@
-page-home {
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Saira+Condensed&display=swap');
 
+.container{
+  position: relative;
+  text-align: center;
+  color:#fff;
+  padding: 10px;
+  .title{
+    font-family:'Courgette', cursive;
+    font-size: 30px;
+    padding-top: 10px;
+  }
+  .content{
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Saira Condensed', sans-serif;
+  }
+  .img-header{
+    width: 50%;
+    height: 50%;
+    padding-bottom: 40px;
+  }
 }
+.slides{
+  margin-bottom: 25px;
+  .slide{
+    background-color: #f1f1f1;
+    border: 1px solid #9bd4eb;
+    font-family: 'Saira Condensed', sans-serif;
+    border-radius: 5px;
+    padding: 15px;
+    line-height: 25px;
+    min-height: 300px;
+    .title-slide{
+      font-weight: 500;
+    }
+    .content-slide{
+      font-size:16px;
+    }
+  }
+}
+.swiper-pagination-bullet-active{
+  background-color: #fc5c5c;
+}
+
+

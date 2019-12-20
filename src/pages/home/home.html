@@ -1,17 +1,26 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
+<!--
+  Generated template for the HomePage page.
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+</ion-header>
+<ion-content padding style="background-color:#fc5c5c">
+  <div class="container">
+    <h1 class="title"> fm </h1>
+    <p class="content">
+      Fresh Markect is a Mobile platform for delivery of fresh groceries, fruits& vegetables.
+      Chooseproducts on our mobile app, and get everything delivered to yourdoorstep,quickly
+    </p>
+    <img class="img-header" src="../../assets/imgs/headerimg.png">
+  </div>
+<ion-slides class="slides"  pager loop slidesPerView="1"  >
+  <ion-slide class="slide" *ngFor="let slide of slider">
+   <img class="img-slide" [src]="slide.img">
+   <h2 class="title-slide" [innerHtml]='slide.title'></h2>
+   <p class="content-slide">{{slide.content}}</p>
+  </ion-slide>
+</ion-slides>
 </ion-content>
