@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TodoserviceProvider } from '../../providers/todoservice/todoservice';
 
-/**
- * Generated class for the CategoryPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -14,12 +9,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'category.html',
 })
 export class CategoryPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  datalist=[];
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public service: TodoserviceProvider
+     ) {
+       this.getData();
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CategoryPage');
-  }
+ getData(){
+   return this.service.getData().subscribe(data =>this.datalist = data);
+ }
 
 }
